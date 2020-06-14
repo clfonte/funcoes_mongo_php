@@ -3,8 +3,8 @@
 
     $id = new \MongoDB\BSON\ObjectId($_GET['id']);
 
-    $filter=['_id'=>$_GET['_id']];
-    $options;
+    $filter=['_id'=>['_id']];
+    $options=[];
     $collection=['ecommerce.marcas'];
 
     // 

@@ -4,15 +4,16 @@
         <form method="POST" action="atualizar" class="col-lg-10">
 
             <?php foreach ($cursor as $c) { ?>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="form-control" value="<?php echo $c->nome ?>">
+                </div>
+
                 <div class="form-group">
                     <label for="cpf">CPF</label>
                     <input type="text" name="cpf" id="cpf" class="form-control" value="<?php echo $c->cpf ?>">
                     <input type="hidden" name="id" id="id" class="form-control" value="<?php echo $c->_id ?>">
-                </div>
-
-                <div class="form-group">
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" name="nome" id="nome" class="form-control" value="<?php echo $c->nome ?>" />
                 </div>
 
                 <div class="form-group">
@@ -23,7 +24,7 @@
             <?php } ?>
 
             <div class="form-group">
-                <a href="http://localhost/3_p_mongodb_video_aula/" id="cancelar" class="btn btn-raised btn-danger">Cancelar</a>
+                <a href="http://localhost/funcoes_mongo" id="cancelar" class="btn btn-raised btn-danger">Cancelar</a>
                 <button type="submit" class="btn btn-raised btn-success">Salvar</button>
 
             </div>

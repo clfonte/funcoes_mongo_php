@@ -1,6 +1,7 @@
 <?php
 
 function findAll($collection) {
+
     require_once __DIR__."/manager.php";
 
     // se tivesse opção de listar ativos e inativos

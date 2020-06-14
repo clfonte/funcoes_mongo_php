@@ -4,18 +4,20 @@
             <tr>
 
                 <th scope="col">Nome</th>
-                <th scope="col"> </th>
+                <th scope="col">CPF</th>
+                <th scope="col">Email</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
 
-            <?php foreach ($cursor as $c) { ?>
+            <?php foreach ($data as $d) { ?>
                 <tr>
 
-                    <td><?php echo $c->nome ?></td>
-                    <td><?php echo $c->cpf ?></td>
-                    <td><?php echo $c->email ?></td>
-                    <td><a href="editar?id=<?php echo $c->_id ?>" class="bnt">Editar</a></td>
+                    <td><?php echo $d->nome ?></td>
+                    <td><?php echo $d->cpf ?></td>
+                    <td><?php echo $d->email ?></td>
+                    <td><a href="editar?id=<?php echo $d->_id ?>" class="bnt">Editar</a></td>
 
                 </tr>
             <?php } ?>

@@ -10,15 +10,15 @@
         </thead>
         <tbody>
 
-            <?php foreach ($produtos as $p) { ?>
+            <?php foreach ($produtos as $p) : { ?>
                 <tr>
 
-                    <td><?php echo $p->produto ?></td>
-                    <td><?php echo $p->marca ?></td>
-                    <td><?php echo $p->preco ?></td>
-                    <td><a href="produtos_edit?id=<?php echo $p->_id ?>" class="bnt">Editar</a></td>
+                    <td><?= $p->produto ?></td>
+                    <td><?= $p->marca ?></td>
+                    <td><?= $p->preco ?></td>
+                    <td><a href="produtos_edit?id=<?=$p->_id ?>" class="bnt">Editar</a></td>
                 </tr>
-            <?php } ?>
+            <?php } endforeach  ?>
         </tbody>
     </table>
     <div class="float-right"><a href="produtos_add"><img src="assets/svg/adicionar.svg" style="width:4em;height:auto"> </a></div>
