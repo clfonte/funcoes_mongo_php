@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="http://localhost/3_p_mongodb_video_aula/">Home </a>
+        <a class="nav-link" href="http://localhost/funcoes_mongo">Home </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="usuarios">Usuarios</a>
@@ -17,7 +17,7 @@
       <li class="nav-item">
         <a class="nav-link" href="produtos">Produtos</a>
       </li>
-     
+
     </ul>
   </div>
 </nav>

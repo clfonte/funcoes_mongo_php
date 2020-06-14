@@ -1,27 +1,27 @@
 <div class="container">
     <table class="table">
-    <thead>
-        <tr>
-      
-        <th scope="col">Marca</th>
-        <th scope="col">Descrição</th>
-        <th scope="col"> </th>
-        </tr>
-    </thead>
-    <tbody>
-   
 
-        <tr>
-        
-        <td>dfasd</td>
-        <td>dfa</td>
-        <td>asdf</td>
-        <td><a href="editar?id=" class="bnt">Editar</a></td>
-        </tr>
-        <tr>
-        
-        
-    </tbody>
+        <thead>
+            <tr>
+                <th scope="col">Marca</th>
+                <th scope="col">Descrição</th>
+                <th scope="col"> </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <?php foreach ($data as $d) { ?>
+
+                <tr>
+
+                    <td><?php echo $d->marca ?></td>
+                    <td><?php echo $d->descricao ?></td>
+                    <td><a href="marcas_edit?id=<?php echo $d->_id ?>" class="bnt">Editar</a></td>
+                </tr>
+                <tr>
+            <?php } ?>
+
+        </tbody>
     </table>
-    <div class="float-right"><a href="marcas_add"><img src="assets/svg/adicionar.svg" style="width:4em;height:auto"> </a></div>
+    <div class="float-right"><a href="marcas_add"><img src="assets/svg/editar.svg" style="width:1em;height:auto"> </a></div>
 </div>
