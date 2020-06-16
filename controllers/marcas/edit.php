@@ -3,11 +3,10 @@
 
     $id = new \MongoDB\BSON\ObjectId($_GET['id']);
 
-    $filter=['_id'=>['_id']];
+    $filter=['_id'=>$id];
     $options=[];
-    $collection=['ecommerce.marcas'];
+    $collection='ecommerce.marcas';
 
-    // 
-    $data = find($filter, $options, $collection);
+    $data=find($filter,$options,$collection);
 
-    require_once __DIR__."/../marcas/edit.php";
+    require_once __DIR__."/../../views/marcas/edit.php";

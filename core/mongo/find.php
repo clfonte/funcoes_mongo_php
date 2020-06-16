@@ -6,7 +6,7 @@
 
         $db = new \MongoDB\Driver\Query($filter, $options);
 
-        $cursor = $manager->executeQuery($collection, $db);
+        $cursor=$manager->executeQuery($collection, $db);
 
         return $cursor;
     }

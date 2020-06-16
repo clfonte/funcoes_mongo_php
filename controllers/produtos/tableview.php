@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__."/../../core/mongo/findAll.php";
+require_once __DIR__."/../../core/mongo/findall.php";
 
 $collection='ecommerce.produtos';
 
